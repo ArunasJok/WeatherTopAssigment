@@ -1,0 +1,35 @@
+#{extends 'main.html' /}
+#{set title:'Signup' /}
+#{welcomemenu id:"signup"/}
+
+<div class="ui two column middle aligned grid basic segment">
+    <div class="column">
+        <form class="ui stacked inverted segment form" action="/register" method="POST">
+            <h3 class="ui header">Register</h3>
+            <div class="two fields">
+                <div class="field">
+                    <label>First Name</label>
+                    <input placeholder="First Name" type="text" name="firstname">
+                </div>
+                <div class="field">
+                    <label>Last Name</label>
+                    <input placeholder="Last Name" type="text" name="lastname">
+                </div>
+            </div>
+            <div class="field">
+                <label>Email</label>
+                <input placeholder="Email" type="text" name="email">
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <input type="password" name="password">
+            </div>
+            <button class="ui blue submit button">Submit</button>
+        </form>
+    </div>
+
+    <div class="column">
+        <img class="ui image" src="../../public/images/sign_up.png" height="412" width="412"/>
+    </div>
+</div>
+#{footer /}

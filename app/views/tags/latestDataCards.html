@@ -1,0 +1,112 @@
+<div class="ui inverted five cards">
+    <div class="ui blue raised link card">
+        <div class="content">
+            <div class="header">
+                ${_station.name}
+                <div class="right floated content">
+                    <i class="blue map marked alternate icon" style="font-size: 2.5em;"></i>
+                </div>
+            </div>
+            <span style="display:block; height: 60px;"></span>
+            <div class="header">
+                <div class="left floated content">
+                    Latitude ${_station.latitudeRound}
+                </div>
+                <div class="left floated content">
+                    Longitude ${_station.longitudeRound}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui blue raised link card">
+        <div class="content">
+            <div class="header">
+                Weather
+                <div class="right floated">
+                    <i class="large blue cloud sun rain icon" style="font-size: 2.5em;"></i>
+                </div>
+                <span style="display:block; height: 60px;"></span>
+                <div class="right floated content">
+                    <h3>
+                        <div class="right aligned description">
+                            <p>
+                                ${_station.weatherCode}
+                            </p>
+                        </div>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui blue raised link card">
+        <div class="content">
+            <div class="header">
+                Temperature
+                <span class="right floated">
+                    <i class="large blue temperature high icon" style="font-size: 2.5em;"></i>
+                </span>
+                <h3>
+                    <div class="right aligned description">
+                        ${_station.tempC} °C
+                        <div>
+                            ${_station.tempF} °F
+                        </div>
+                        <h4>
+                            Min: ${_station.minTempC} °C
+                            <div></div>
+                            Max: ${_station.maxTempC} °C
+                        </h4>
+                    </div>
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div class="ui blue raised link card">
+        <div class="content">
+            <div class="header">
+                Wind
+                <span class="right floated">
+                            <i class="large blue fan icon" style="font-size: 2.5em;"></i>
+                        </span>
+                <h3>
+                    <div class="right aligned description">
+                        ${_station.windBeaufort} bft
+                    </div>
+                    <div class="right aligned description">
+                        Feels like ${_station.windChill} °C
+                    </div>
+                    <div class="right aligned description">
+                        ${_station.windDirectionName}
+                        <h4>
+                            Min: ${_station.minWindSpeed}
+                            <div></div>
+                            Max: ${_station.maxWindSpeed}
+                        </h4>
+                    </div>
+
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div class="ui blue raised link card">
+        <div class="content">
+            <div class="header">
+                Pressure
+                <span class="right floated">
+                            <i class="large blue compress arrows alternate icon" style="font-size: 2.5em;"></i>
+                </span>
+                <h3>
+                    <div class="right aligned description">
+                        ${_station.pressureNow}
+                        hpa
+                        <h4>
+                            Min: ${_station.minPressure}
+                            <div></div>
+                            Max: ${_station.maxPressure}
+                        </h4>
+                    </div>
+                </h3>
+            </div>
+        </div>
+    </div>
+</div>

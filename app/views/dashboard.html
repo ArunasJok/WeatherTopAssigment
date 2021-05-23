@@ -1,8 +1,39 @@
 #{extends 'main.html' /}
 #{set title:'Dashboard' /}
-
 #{menu id:"dashboard"/}
 
-<section class="ui segment">
-  #{mainpanel/}
+<span style="display:block; height: 10px;"></span>
+
+#{list items:stations, as:'station'}
+<section class="ui blue segment">
+    #{if station.readings.size() > 0} #{latestDataCards station:station/} #{/if}
+
+    <h1 class="ui header">
+        ${station.name}
+        <a href="/stations/${station.id}">
+            <div class="large ui blue animated right floated button" tabindex="0">
+                <div class="visible content">View older data</div>
+                <div class="hidden content">
+                    <i class="right arrow icon"></i>
+                </div>
+            </div>
+        </a>
+        <a href="/dashboard/deletestation/${station.id}">
+            <div class="large ui animated fade right floated button" tabindex="0">
+                <div class="visible content">Remove Station</div>
+                <div class="hidden content" style="color: red">
+                    Are you sure?
+                </div>
+            </div>
+        </a>
+    </h1>
+    <h4>
+
+    </h4>
 </section>
+#{/list}
+#{addStation /}
+#{footer /}
+
+
+

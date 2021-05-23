@@ -1,0 +1,26 @@
+
+<form class="ui inverted stacked segment form" action="/stations/${_station.id}/addData" method="POST">
+  <div class="two fields">
+    <div class="field">
+      <label>Weather Code</label>
+      <input placeholder="Code" type="number" name="code">
+    </div>
+    <div class="field">
+      <label>Temperature</label>
+      <input placeholder="Temperature (°C)" type="number" name="temperature">
+    </div>
+    <div class="field">
+      <label>Wind Speed</label>
+      <input placeholder="Wind Speed (km/h)" type="number" name="windSpeed">
+    </div>
+    <div class="field">
+      <label>Wind Direction</label>
+      <input placeholder="Wind Direction (deg)" type="number" name="windDirection">
+    </div>
+    <div class="field">
+      <label>Pressure</label>
+      <input placeholder="Pressure (hPa)" type="number" name="pressure">
+    </div>
+  </div>
+  <button class="ui blue submit button">Submit New Readings</button>
+</form>

@@ -1,0 +1,15 @@
+#{extends 'main.html' /}
+#{set title:'Station' /}
+#{menu id:"station"/}
+
+
+#{latestDataCards station:station/}
+
+<section class="ui inverted segment">
+    <h2 class="ui header">
+        ${station.name}
+    </h2>
+    #{liststations station:station /}
+    #{addData station:station /}
+</section>
+#{footer /}

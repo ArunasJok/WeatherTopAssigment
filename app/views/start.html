@@ -1,13 +1,46 @@
 #{extends 'main.html' /}
 #{set title:'About' /}
+#{welcomemenu id:"start"/}
 
-#{menu id:"start"/}
-
-<section class="ui center aligned middle aligned segment">
-  <h1 class="ui header">
-    Welcome to Template 1
-  </h1>
-  <p>
-    To be replaced with content...
-  </p>
+<section class="ui inverted segment">
+    <h1 class="ui header">
+        Welcome to WeatherTop!
+        <span style="display:block; height: 10px;"></span>
+        <div class="ui inverted segment">
+            <img class="ui left floated image" src="../../public/images/start_mountain.jpg" height="353" width="550"/>
+            <h3>
+                <p>Welcome to your local weather data analysis centre! Here you can submit your readings and create new
+                    weather stations.
+                    Also discuss about all weather related topics</p>
+                <p>Weather stations for home use are getting more feature-rich and accurate all the time. There's plenty
+                    of websites
+                    that provide weather reports, but having your own digital weather station provides you with
+                    real-time information
+                    for right outside (and inside!) your house.
+                    Whether you want a home weather station for your garden, planning outdoor activities, or simply to
+                    know what to
+                    wear outdoors; we are the Irelands largest weather instrument specialist.</p>
+                <p>Our mission is to monitor, analyse and predict Ireland’s weather and climate, and to provide a range
+                    of high
+                    quality meteorological and related information to our customers.
+                <p><em>Our Vision - Making Ireland Weather and Climate Prepared.</em></p>
+            </h3>
+        </div>
+    </h1>
 </section>
+<div class="ui left floated segment">
+    <h2 class="ui header">Our Goals</h2>
+    <h3>
+        <ul>
+            <li>Enhance support for impact-based decision making for weather events</li>
+            <li> Provide climate information services which promote the safety of citizens and supports economic and
+                environmental resilience</li>
+            <li>Deliver a high quality national flood forecasting service</li>
+            <li>Continue to provide an effective authoritative voice on meteorology in Ireland</li>
+            <li>Maintain and support an expert, professional workforce</li>
+            <li>Lead a modern, integrated meteorological infrastructure and support an enterprise environment for
+                weather and climate services</li>
+        </ul>
+    </h3>
+</div>
+#{footer /}
